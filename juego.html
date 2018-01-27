@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- Incluir los archivos donde este guardado el estilo en formato css -->
+<link rel="stylesheet" href="css/juego.css">
+<!-- Incluir los archivos donde este el codigo Javascript del juego -->
+<script src='js/resources.js'> </script>
+<script src='js/jugador.js'> </script>
+<script src='js/dibujante.js'> </script>
+<script src='js/obstaculo.js'> </script>
+<script src='js/enemigo.js'> </script>
+<script src='js/zombie_caminante.js'></script>
+<script src='js/zombie_conductor.js'></script>
+<script src='js/juego.js'> </script>
+<script src='js/inicio.js'> </script>
+
+</head>
+
+<body>   
+    <div id='inicio'>
+            <div id="titulo">
+                    <h1>Bienvenidos al Juego de Ciudad Zombie</h1>
+                </div>
+                <div class="slider">
+                    <ul>
+                       <li><img src="imagenes/Mensaje01.png" alt="Esto es un Caos"></li>
+                       <li><img src="imagenes/Mensaje.png" alt="Esto es un Caos Imparable"></li>
+                       <li><img src="imagenes/ins.png" alt="Instrucciones"></li>
+                    </ul>
+                </div>
+                <button class="btn" id="empezar" onClick="Inicio.Jugamos();">Empezar a Jugar</button>
+                
+                <div id="tiempovisto">
+                <p id="tiempo"><span id="minutos">00</span>:<span id="segundos">00</span></p>
+                </div>
+    </div>
+    <button class="btn" id="reiniciar" onClick="window.location.reload()">Volvamos a Jugar</button>
+ 
+</body>
+</html>
+

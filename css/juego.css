@@ -1,0 +1,121 @@
+body {
+  background-image: url('../imagenes/fondo.png');
+  font-family: monospace, Arial, sans-serif;
+  font-size:15px;
+
+}
+canvas {
+  margin: auto;
+  display: flex;
+  margin-top: calc(50vh - 286px);
+
+}
+.boton-recargar {
+  margin: auto;
+  display: flex;
+  background: none;
+  border: none;
+  color: white;
+  font-family: monospace;
+  visibility: hidden;
+}
+
+/*Adicional Presentación*/
+#reiniciar {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  visibility: hidden;
+  z-index: 10000;
+}
+
+#inicio {
+  margin: auto;
+  margin-top: calc(50vh - 286px);
+  display: block;
+  text-align: center;
+  position: relative;
+  
+}
+
+#titulo{
+  background-color:#9C27B0;/*Purple*/
+  text-align: center;
+  color: #fff;
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+#empezar {
+  display: flex;
+  position: absolute;
+  top: 85%;
+  left: 43%;
+}
+
+/* Slider SIMPLE *//* https://codepen.io/JyGProyectosWeb/pen/PNBRev */
+.slider {
+	width: 75%;
+	margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%; /*se cambia de acuerdo a la cantidad de imagenes 100% = 1 imagen*/
+	animation: cambio 25s infinite alternate linear;
+}
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+.slider img {
+  width: 80%;
+  border-radius: 10px;
+}
+@keyframes cambio {
+	0% {margin-left: 0;}
+  33% {margin-left: 0;}
+  
+  36% {margin-left: -100%;}
+	66% {margin-left: -100%;}
+	
+	69% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+}
+
+.btn{
+  display: flex;
+  position: absolute;
+  font-size: 120%;
+  display:block;
+  padding: 10px;
+  background-color: #9C27B0;
+  color:#fff;
+  border:1px solid #fff;
+  border-radius: 10px;
+}
+.btn:hover { 
+  background: #E1BEE7;
+  color: #9C27B0;
+  font-weight: bold;
+  border:1px solid #9C27B0;
+}
+
+#tiempovisto {
+  position: absolute;
+  margin: auto;
+  display: flex;
+  background: none;
+  border: none;
+  color: white;
+  visibility: hidden;
+}
