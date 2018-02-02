@@ -7,5 +7,7 @@ Donde aprendemos a crear objetos, clases, generar instancias y herencias.
 
 ![zombie](https://github.com/Dvdam/muevete/blob/master/thumb.jpg "Juego")
 
->Por: David Amblo
+>Por: [David Amblo](https://github.com/Dvdam "David Amblo").
+
+
 
